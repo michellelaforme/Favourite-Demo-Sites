@@ -1,0 +1,251 @@
+<!-- subscribe page -->
+<!-- Michelle La Forme, IFA WD INT. Project, Start date: 27 November 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art by Michelle La Forme</title>
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/global.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Spicy+Rice&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="top">
+      <!-- latest updates : customize for shop updates or for events, linked to shop page or event page, respectfully -->
+      <a href="../HTML/shop.html"
+        ><div class="banner">
+          <p>Next shop update: February 2, 2025</p>
+        </div></a
+      >
+      <!-- website name and navigation, consistent on all pages -->
+      <h1>Art by Michelle La Forme</h1>
+      <img
+        class="logo"
+        src="../Images/Logo/Logo.png"
+        alt="Art by Michelle La Forme logo"
+      />
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../HTML/about.html">About</a></li>
+          <li><a href="../HTML/products.html">Products</a></li>
+          <li><a href="../HTML/portfolio.html">Portfolio</a></li>
+          <li><a href="../HTML/contact.html">Contact</a></li>
+          <li><a href="../HTML/subscribe.html">Subscribe</a></li>
+          <li><a href="" class="cart"> &#128722;</a></li>
+        </ul>
+      </nav>
+      <!-- Cart symbol to add items to cart -- may have to update this later -->
+    </header>
+
+    <!-- page content, specific to this page -->
+    <main>
+      <!-- page title -->
+      <h2>Subscribe to Art by Michelle La Forme</h2>
+
+      <form action="" method="POST">
+        <fieldset class="siteInfo">
+          <legend>Site information</legend>
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+            required
+          />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <label for="passwordConfirm">Confirm password:</label>
+          <input
+            type="password"
+            name="passwordConfirm"
+            id="passwordConfirm"
+            placeholder="Confirm password"
+            required
+          />
+        </fieldset>
+        <fieldset class="personalInfo">
+          <legend>Personal information</legend>
+          <label for="firstName">First name:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Jane"
+            required
+          />
+          <label for="lastName">Last name:</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Doe"
+            required
+          />
+          <label for="email">Email address:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="info@example.com"
+            required
+          />
+          <label for="phone">Phone number:</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="905-222-1222"
+          />
+          <label for="date">Date of birth:</label>
+          <input type="date" name="date" id="date" />
+        </fieldset>
+        <fieldset class="addressInfo">
+          <legend>Address</legend>
+          <label for="address1">Street address:</label>
+          <input
+            type="text"
+            name="address1"
+            id="address1"
+            placeholder="123 Street"
+          />
+          <label for="apartment">Apartment/ unit number:</label>
+          <input type="number" name="apartment" id="apartment" />
+          <label for="city">City:</label>
+          <input type="text" name="city" id="city" />
+          <label for="province">Province:</label>
+          <select name="province" id="province">
+            <option value="AB">Alberta</option>
+            <option value="BC">British Columbia</option>
+            <option value="MB">Manitoba</option>
+            <option value="NB">New Brunswick</option>
+            <option value="NF">Newfoundland and Labrador</option>
+            <option value="NS">Nova Scotia</option>
+            <option value="ON">Ontario</option>
+            <option value="PE">Prince Edward Island</option>
+            <option value="QB">Quebec</option>
+            <option value="SK">Saskatchewan</option>
+            <option value="NW">Territory: Northwest Territories</option>
+            <option value="NU">Territory: Nunavut</option>
+
+            <option value="YU">Territory: Yukon</option>
+          </select>
+          <label for="country">Country:</label>
+          <input type="text" name="country" id="country" value="Canada" />
+        </fieldset>
+        <fieldset class="interestsInfo">
+          <legend>Please check what you're interested in</legend>
+          <input
+            type="checkbox"
+            name="interests"
+            id="workshop"
+            value="workshop"
+            checked
+          />
+          <label for="workshop">Workshops (in-person or virtual)</label>
+
+          <input
+            type="checkbox"
+            name="interests"
+            id="beadwork"
+            value="beadwork"
+            checked
+          />
+          <label for="beadwork">Beadwork</label>
+
+          <input
+            type="checkbox"
+            name="interests"
+            id="painting"
+            value="painting"
+            checked
+          />
+          <label for="painting">Painting</label>
+
+          <input
+            type="checkbox"
+            name="interests"
+            id="digitalArt"
+            value="digitalArt"
+            checked
+          />
+          <label for="digitalArt">Digital art</label>
+
+          <label for="other" id="otherlabel">Other:</label>
+          <input
+            type="text"
+            name="other"
+            id="other"
+            placeholder="Please specify"
+          />
+        </fieldset>
+        <input
+          type="checkbox"
+          name="subscribe"
+          id="subscribe"
+          value="true"
+          checked
+        />
+        <label for="subscribe">Subscribe to newsletter</label>
+        <!-- submit button -->
+        <input type="submit" value="Submit" class="buttons" />
+        <input type="reset" value="Cancel" class="buttons" />
+      </form>
+
+      <div class="copyright">
+        <p class="disc">
+          All artwork shared on this page are original works, hand-crafted by
+          Michelle La Forme. They are not to be replicated or shared without
+          permission.
+        </p>
+        <p class="copy">&copy; Copyright 2024, Art by Michelle La Forme</p>
+        <p class="shopify">
+          Payment and checkout processing (probably) by Shopify
+        </p>
+      </div>
+    </main>
+    <!-- business location and copyright info. consistent across all pages -->
+
+    <footer>
+      <address>
+        Art hand-crafted in: <br />Quispamsis, New Brunswick, Canada <br />On
+        unceded Wolastoqey land
+      </address>
+
+      <!-- Will have to double check how to add shopify database and what I need as for credit here -->
+      <div class="footerNav">
+        <a href="#top">Top of page</a>
+        <a href="../HTML/contact.html">Contact</a>
+      </div>
+      <div class="icons">
+        <a href="https://www.facebook.com/artbymichellelaforme"
+          ><img src="../Images/Icons/facebook.png" alt="Facebook logo"
+        /></a>
+        <a href="https://www.instagram.com/artbymichellelaforme/"
+          ><img src="../Images/Icons/instagram.png" alt="Instagram logo"
+        /></a>
+        <a href="https://www.youtube.com/@artbymichellelaforme"
+          ><img src="../Images/Icons/youtube.png" alt=""
+        /></a>
+        <a href="https://www.linkedin.com/in/michellelaforme"
+          ><img src="../Images/Icons/linkedin.png" alt=""
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

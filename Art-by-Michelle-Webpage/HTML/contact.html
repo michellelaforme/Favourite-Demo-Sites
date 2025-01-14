@@ -1,0 +1,151 @@
+<!-- contact page -->
+<!-- Michelle La Forme, IFA WD INT. Project, Start date: 27 November 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art by Michelle La Forme</title>
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/global.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Spicy+Rice&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="top">
+      <!-- latest updates : customize for shop updates or for events, linked to shop page or event page, respectfully -->
+      <a href="../HTML/shop.html"
+        ><div class="banner">
+          <p>Next shop update: February 2, 2025</p>
+        </div></a
+      >
+      <!-- website name and navigation, consistent on all pages -->
+      <h1>Art by Michelle La Forme</h1>
+      <img
+        class="logo"
+        src="../Images/Logo/Logo.png"
+        alt="Art by Michelle La Forme logo"
+      />
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../HTML/about.html">About</a></li>
+          <li><a href="../HTML/products.html">Products</a></li>
+          <li><a href="../HTML/portfolio.html">Portfolio</a></li>
+          <li><a href="../HTML/contact.html">Contact</a></li>
+          <li><a href="../HTML/subscribe.html">Subscribe</a></li>
+          <li><a href="" class="cart"> &#128722;</a></li>
+        </ul>
+      </nav>
+      <!-- Cart symbol to add items to cart -- may have to update this later -->
+    </header>
+
+    <!-- page content, specific to this page -->
+    <main>
+      <!-- page title -->
+      <h2>Contact us</h2>
+      <div class="contactInfo">
+        <h3>Address</h3>
+        <address>
+          Art by Michelle La Forme <br />Quispamsis, New Brunswick, Canada
+          <br />On unceded Wolastoqey land
+        </address>
+        <p>Phone number: 905-222-1222</p>
+        <p>
+          Email:
+          <a href="mailto:msmlaforme@hotmail.com">info@michellelaforme.com</a>
+        </p>
+      </div>
+      <div class="hours">
+        <h3>Hours of operation:</h3>
+        <ul>
+          <li>Monday: 12pm to 5pm</li>
+          <li>Tuesday: 12pm to 5pm</li>
+          <li>Wednesday: 12pm to 5pm</li>
+          <li>Thursday: 12pm to 5pm</li>
+          <li>Friday: 12pm to 5pm</li>
+          <li>Saturday: By request only</li>
+          <li>Sunday: By request only</li>
+        </ul>
+      </div>
+      <!-- address, hours, phone number, email  -->
+      <div class="mapImg">
+        <h3>Location map</h3>
+        <img
+          src="../Images/Other/map.jpg"
+          alt="Map of Art by Michelle La Forme location"
+        />
+      </div>
+
+      <!-- map -->
+      <form action="" method="POST">
+        <fieldset class="contact">
+          <legend>Contact</legend>
+          <label for="name" id="namelabel">Name:</label>
+          <input type="text" name="name" id="name" />
+          <label for="emailbox" id="emaillabel">Email:</label>
+          <input type="email" name="email" id="emailbox" />
+          <label for="phonebox" id="phonelabel">Phone:</label>
+          <input type="tel" name="phone" id="phonebox" />
+          <label for="message" id="messagelabel">Message:</label>
+          <textarea name="message" id="message"></textarea>
+
+          <label for="method" id="title">Preferred contact method:</label>
+          <input type="radio" name="contactMethod" id="phone2" />
+          <label for="phone2" id="label1">Phone</label>
+          <input type="radio" name="contactMethod" id="email2" />
+          <label for="email2" id="label2">Email</label>
+        </fieldset>
+        <input type="submit" value="Submit" class="buttons" />
+        <input type="reset" value="Cancel" class="buttons" />
+      </form>
+      <!-- form, direct message with name, input area, radio button for preferred contact method and email address -->
+      <!-- submit buttons -->
+      <div class="copyright">
+        <p class="disc">
+          All artwork shared on this page are original works, hand-crafted by
+          Michelle La Forme. They are not to be replicated or shared without
+          permission.
+        </p>
+        <p class="copy">&copy; Copyright 2024, Art by Michelle La Forme</p>
+        <p class="shopify">
+          Payment and checkout processing (probably) by Shopify
+        </p>
+      </div>
+    </main>
+    <!-- business location and copyright info. consistent across all pages -->
+
+    <footer>
+      <address>
+        Art hand-crafted in: <br />Quispamsis, New Brunswick, Canada <br />On
+        unceded Wolastoqey land
+      </address>
+
+      <!-- Will have to double check how to add shopify database and what I need as for credit here -->
+      <div class="footerNav">
+        <a href="#top">Top of page</a>
+        <a href="../HTML/contact.html">Contact</a>
+      </div>
+      <div class="icons">
+        <a href="https://www.facebook.com/artbymichellelaforme"
+          ><img src="../Images/Icons/facebook.png" alt="Facebook logo"
+        /></a>
+        <a href="https://www.instagram.com/artbymichellelaforme/"
+          ><img src="../Images/Icons/instagram.png" alt="Instagram logo"
+        /></a>
+        <a href="https://www.youtube.com/@artbymichellelaforme"
+          ><img src="../Images/Icons/youtube.png" alt=""
+        /></a>
+        <a href="https://www.linkedin.com/in/michellelaforme"
+          ><img src="../Images/Icons/linkedin.png" alt=""
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

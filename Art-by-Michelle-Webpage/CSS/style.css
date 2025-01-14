@@ -1,0 +1,242 @@
+/* for individual pages. */
+@charset "utf-8";
+
+/* index.html */
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-areas:
+    "pic head"
+    "pic int1"
+    "pic int2";
+  align-items: center;
+  width: 70%;
+  margin: 2% auto;
+  justify-content: center;
+}
+.hero img {
+  grid-area: pic;
+}
+.hero h2 {
+  font-size: 2rem;
+  font-family: "Spicy Rice", "Playfair Display", Georgia, "Times New Roman",
+    Times, serif;
+  grid-area: head;
+  padding: 4% 2%;
+  color: #fff8f9;
+  text-align: left;
+}
+.hero p {
+  padding: 2%;
+  line-height: 25px;
+  text-align: justify;
+}
+.intro1 {
+  grid-area: int1;
+}
+.intro2 {
+  grid-area: int2;
+}
+
+.featured {
+  display: flex;
+  flex-wrap: wrap;
+}
+.featured a {
+  border: 3px solid #fff8f9;
+  margin: 1%;
+  border-radius: 20px;
+  max-width: 30%;
+}
+.featured img {
+  max-width: 80%;
+}
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1%;
+}
+.testimonials a {
+  color: #fff8f9;
+}
+blockquote {
+  font-style: italic;
+}
+.testimonials div p {
+  font-weight: bold;
+}
+.testimonials div {
+  padding: 1%;
+}
+
+.mainTable {
+}
+table img {
+  max-width: 100%;
+  height: auto;
+}
+table img:hover {
+  transform: scale(1.2);
+}
+
+thead {
+  background-color: #f07589;
+  color: #fff8f9;
+}
+
+caption {
+  padding: 1%;
+}
+
+.descript {
+  width: 25%;
+}
+.products {
+  width: 10%;
+}
+.colour {
+  width: 10%;
+}
+.size {
+  width: 13%;
+}
+
+.mainTable td {
+  border: 2px solid #fff8f9;
+  border-radius: 10px;
+}
+.inner {
+  margin: auto;
+}
+.inner td {
+  border: 1px solid #f07589;
+}
+.inner td:hover {
+  background-color: #f07589;
+}
+
+table a {
+  color: #fff8f9;
+}
+
+form {
+  width: 70%;
+  margin: 2% auto;
+}
+fieldset {
+  border: 2px solid #fff8f9;
+  border-radius: 10px;
+  padding: 4%;
+  display: grid;
+  grid-template-columns: 20% 40%;
+  justify-content: center;
+  text-align: right;
+  gap: 2%;
+}
+
+.interestsInfo:nth-child(even) {
+  text-align: left;
+}
+.interestsInfo:nth-child(odd) {
+  text-align: center;
+}
+.buttons {
+  background-color: #f07589;
+  color: #fff8f9;
+  padding: 2%;
+  border-radius: 10px;
+  border: 1px solid #fff8f9;
+  margin: 1%;
+}
+.buttons:hover {
+  font-style: italic;
+  background-color: #ffb4c0;
+}
+
+#workshop,
+#beadwork,
+#painting,
+#digitalArt,
+#subscribe {
+  accent-color: #ffb4c0;
+  justify-self: end;
+}
+#otherlabel {
+  justify-self: end;
+}
+.contact {
+  grid-template-columns: 40% 40%;
+  grid-template-areas:
+    "namelabel name"
+    "emaillabel email"
+    "phonelabel phone"
+    "messagelabel message"
+    "title none"
+    "radio1 label1"
+    "radio2 label2";
+}
+#namelabel {
+  grid-area: namelabel;
+}
+#name {
+  grid-area: name;
+}
+#emaillabel {
+  grid-area: emaillabel;
+}
+#emailbox {
+  grid-area: email;
+}
+#phonelabel {
+  grid-area: phonelabel;
+}
+#phonebox {
+  grid-area: phone;
+}
+#messagelabel {
+  grid-area: messagelabel;
+}
+#message {
+  grid-area: message;
+}
+#title {
+  grid-area: title;
+}
+#phone2 {
+  grid-area: radio1;
+  text-align: right;
+  width: 10%;
+  justify-self: end;
+}
+#label1 {
+  grid-area: label1;
+  text-align: left;
+}
+#email2 {
+  grid-area: radio2;
+  text-align: right;
+  justify-self: end;
+  width: 10%;
+}
+#label2 {
+  grid-area: label2;
+  text-align: left;
+}
+
+.hours ul {
+  list-style-position: inside;
+  list-style-type: circle;
+  text-align: left;
+  width: 20%;
+  margin: auto;
+}
+
+.mapImg {
+  width: 50%;
+  margin: auto;
+}

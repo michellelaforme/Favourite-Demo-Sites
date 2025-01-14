@@ -1,0 +1,607 @@
+<!-- products/ shop page. -->
+<!-- will also have checkout page? will need to research how to connect my own work with shopify database/ server. -->
+<!-- Michelle La Forme, IFA WD INT. Project, Start date: 27 November 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art by Michelle La Forme</title>
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/global.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Spicy+Rice&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="top">
+      <!-- latest updates : customize for shop updates or for events, linked to shop page or event page, respectfully -->
+      <a href="../HTML/products.html"
+        ><div class="banner">
+          <p>Next shop update: February 2, 2025</p>
+        </div></a
+      >
+      <!-- website name and navigation, consistent on all pages -->
+      <h1>Art by Michelle La Forme</h1>
+      <img
+        class="logo"
+        src="../Images/Logo/Logo.png"
+        alt="Art by Michelle La Forme logo"
+      />
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../HTML/about.html">About</a></li>
+          <li><a href="../HTML/products.html">Products</a></li>
+          <li><a href="../HTML/portfolio.html">Portfolio</a></li>
+          <li><a href="../HTML/contact.html">Contact</a></li>
+          <li><a href="../HTML/subscribe.html">Subscribe</a></li>
+          <li><a href="" class="cart"> &#128722;</a></li>
+        </ul>
+      </nav>
+      <!-- Cart symbol to add items to cart -- may have to update this later -->
+    </header>
+
+    <!-- page content, specific to this page -->
+    <main>
+      <!-- page title -->
+      <h2>Shop Art by Michelle La Forme</h2>
+
+      <table class="mainTable">
+        <caption>
+          Products currently available for purchase
+        </caption>
+        <thead>
+          <tr>
+            <th class="itemNumber">Item number</th>
+            <th class="products">Product</th>
+            <th class="descript">Description</th>
+            <th class="itemPicture">Image</th>
+            <th class="price">Price</th>
+            <th class="quantity">Available quantity</th>
+            <th class="colour">Colour options</th>
+            <th class="size">Size options</th>
+            <th class="custom">Custom options available</th>
+            <th>Add to Cart</th>
+          </tr>
+          <!-- 10 columns -->
+        </thead>
+        <tbody>
+          <tr>
+            <td>01</td>
+            <td>Bracelets</td>
+            <td>Crystal bead bracelets made in varying colours</td>
+            <td>
+              <img
+                src="../Images/Product-images/bracs.jpg"
+                alt="A pile of
+              bracelets"
+              />
+            </td>
+            <td>$15</td>
+            <td>13</td>
+            <td>
+              <table class="inner">
+                <tr>
+                  <td>Orange</td>
+                </tr>
+                <tr>
+                  <td>Green</td>
+                </tr>
+                <tr>
+                  <td>Pink</td>
+                </tr>
+                <tr>
+                  <td>Red</td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <table class="inner">
+                <tr>
+                  <td>Smaller/ kids (7 in)</td>
+                </tr>
+                <tr>
+                  <td>Standard (8.5in)</td>
+                </tr>
+                <tr>
+                  <td>Larger (9.5in)</td>
+                </tr>
+              </table>
+            </td>
+            <td>&#x2611;</td>
+            <td><a href="">&#128722;</a></td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>Anklets</td>
+            <td>Thin beaded anklets with silver clasps</td>
+            <td>
+              <img
+                src="../Images/Product-images/anklet.jpg"
+                alt="A pink beaded anklet"
+              />
+            </td>
+            <td>$18</td>
+            <td>9</td>
+            <td>
+              <table class="inner">
+                <tr>
+                  <td>Pink</td>
+                </tr>
+                <tr>
+                  <td>Pink and orange</td>
+                </tr>
+                <tr>
+                  <td>Rainbow</td>
+                </tr>
+                <tr>
+                  <td>White</td>
+                </tr>
+                <tr>
+                  <td>Black</td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <table class="inner">
+                <tr>
+                  <td>Smaller/ kids (8 in)</td>
+                </tr>
+                <tr>
+                  <td>Standard (9.5in)</td>
+                </tr>
+                <tr>
+                  <td>Larger (10.5in)</td>
+                </tr>
+              </table>
+            </td>
+            <td>&#x2611;</td>
+            <td><a href="">&#128722;</a></td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>Dreamcatcher</td>
+            <td>Beaded Dreamcatcher with fringe</td>
+            <td>
+              <img
+                src="../Images/Product-images/dreamcatcher.jpg"
+                alt="Brown Dreamcatcher"
+              />
+            </td>
+            <td>$65</td>
+            <td>2</td>
+            <td>
+              <table class="inner">
+                <tr>
+                  <td>Brown</td>
+                </tr>
+                <tr>
+                  <td>Pink</td>
+                </tr>
+                <tr>
+                  <td>Black</td>
+                </tr>
+              </table>
+            </td>
+            <td>
+              <table class="inner">
+                <tr>
+                  <td>Small (3 in)</td>
+                </tr>
+                <tr>
+                  <td>Standard (8in)</td>
+                </tr>
+                <tr>
+                  <td>Large (12in)</td>
+                </tr>
+              </table>
+            </td>
+            <td>&#x2611;</td>
+            <td><a href="">&#128722;</a></td>
+          </tr>
+          <tr>
+            <td>04</td>
+            <td>Stud Earrings</td>
+            <td>Smaller stud earrings with daisy and rhinestones</td>
+            <td>
+              <img
+                src="../Images/Product-images/earrings-1.jpg"
+                alt="Stud earrings"
+              />
+            </td>
+            <td>$20</td>
+            <td>15</td>
+            <td>
+              <table class="inner">
+                <tr>
+                  <td>Purple</td>
+                </tr>
+                <tr>
+                  <td>Blue</td>
+                </tr>
+                <tr>
+                  <td>Green</td>
+                </tr>
+                <tr>
+                  <td>Turquoise</td>
+                </tr>
+              </table>
+            </td>
+            <td>One size</td>
+            <td>&#x2611;</td>
+            <td><a href="">&#128722;</a></td>
+          </tr>
+          <tr>
+            <td>05</td>
+            <td>Letter Bracelets</td>
+            <td>Custom bracelets with a message of your choosing</td>
+            <td>
+              <img
+                src="../Images/Product-images/mamaset.jpg"
+                alt="Bracelets that say Mama and Mini"
+              />
+            </td>
+            <td>$15</td>
+            <td>10</td>
+            <td>Custom</td>
+            <td>
+              <table class="inner">
+                <tr>
+                  <td>Smaller/ kids (7 in)</td>
+                </tr>
+                <tr>
+                  <td>Standard (8.5in)</td>
+                </tr>
+                <tr>
+                  <td>Larger (9.5in)</td>
+                </tr>
+              </table>
+            </td>
+            <td>&#x2611;</td>
+            <td><a href="">&#128722;</a></td>
+          </tr>
+          <tr>
+            <td>06</td>
+            <td>Orange Shirt Pin</td>
+            <td>
+              Beaded Orange Shirt pin for National Truth & Reconcilliation Day
+              #everyChildMatters
+            </td>
+            <td>
+              <img
+                src="../Images/Product-images/orange-shirt.jpg"
+                alt="Beaded orange shirt pin"
+              />
+            </td>
+            <td>$40</td>
+            <td>4</td>
+            <td>Orange</td>
+            <td>One size</td>
+            <td>&#x2610;</td>
+            <!-- unchecked ballot box -->
+            <td><a href="">&#128722;</a></td>
+          </tr>
+          <tr>
+            <td>06</td>
+            <td>Mini Christmas ornaments</td>
+            <td>Beaded Christmas ornaments to Indigify your tree</td>
+            <td>
+              <img
+                src="../Images/Product-images/orn.jpg"
+                alt="Beaded Christmas Ornament"
+              />
+            </td>
+            <td>$15</td>
+            <td>10</td>
+            <td>
+              <table class="inner">
+                <tr>
+                  <td>Medicine Wheel colours</td>
+                </tr>
+                <tr>
+                  <td>Turquoise</td>
+                </tr>
+                <tr>
+                  <td>Blue</td>
+                </tr>
+                <tr>
+                  <td>Pink</td>
+                </tr>
+              </table>
+            </td>
+            <td>Small (40mm)</td>
+            <td>&#x2611;</td>
+            <td><a href="">&#128722;</a></td>
+          </tr>
+          <tr>
+            <td>07</td>
+            <td>Large Christmas ornaments</td>
+            <td>Beaded Christmas ornaments to Indigify your tree</td>
+            <td>
+              <img
+                src="../Images/Product-images/orn2.jpg"
+                alt="Beaded Christmas Ornament"
+              />
+            </td>
+            <td>$25</td>
+            <td>10</td>
+            <td>
+              <table class="inner">
+                <tr>
+                  <td>Medicine Wheel colours</td>
+                </tr>
+                <tr>
+                  <td>Turquoise</td>
+                </tr>
+                <tr>
+                  <td>Blue</td>
+                </tr>
+                <tr>
+                  <td>Pink</td>
+                </tr>
+              </table>
+            </td>
+            <td>Large (60mm)</td>
+            <td>&#x2611;</td>
+            <td><a href="">&#128722;</a></td>
+          </tr>
+          <tr>
+            <td>08</td>
+            <td>Lanyard keychain</td>
+            <td>To make holding your keys more comfortable and stylish</td>
+            <td>
+              <img
+                src="../Images/Product-images/pink3.jpg"
+                alt="Beaded Lanyard"
+              />
+            </td>
+            <td>$40</td>
+            <td>20</td>
+            <td>
+              <table class="inner">
+                <tr>
+                  <td>Pinks</td>
+                </tr>
+                <tr>
+                  <td>Turquoise</td>
+                </tr>
+                <tr>
+                  <td>Blue</td>
+                </tr>
+                <tr>
+                  <td>Orange</td>
+                </tr>
+              </table>
+            </td>
+            <td>One size</td>
+            <td>&#x2611;</td>
+            <td><a href="">&#128722;</a></td>
+          </tr>
+          <tr>
+            <td>09</td>
+            <td>Around the Neck Lanyard</td>
+            <td>Effortlessly carry your keys around your neck in style</td>
+            <td>
+              <img
+                src="../Images/Portfolio-images/lanyard.jpg"
+                alt="Long lanyard"
+              />
+            </td>
+            <td>$80</td>
+            <td>12</td>
+            <td>
+              <table class="inner">
+                <tr>
+                  <td>Pinks</td>
+                </tr>
+                <tr>
+                  <td>Turquoise</td>
+                </tr>
+                <tr>
+                  <td>Blue</td>
+                </tr>
+                <tr>
+                  <td>Orange</td>
+                </tr>
+                <tr>
+                  <td>Rainbow</td>
+                </tr>
+              </table>
+            </td>
+            <td>One size</td>
+            <td>&#x2611;</td>
+            <td><a href="">&#128722;</a></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Stud Earrings</td>
+            <td>Larger stud earrings with cabochon in the centre</td>
+            <td>
+              <img
+                src="../Images/Portfolio-images/blue-earrings.jpg"
+                alt="Stud earrings"
+              />
+            </td>
+            <td>$30</td>
+            <td>2</td>
+            <td>
+              <table class="inner">
+                <tr>
+                  <td>Blue</td>
+                </tr>
+                <tr>
+                  <td>Black</td>
+                </tr>
+                <tr>
+                  <td>Pink</td>
+                </tr>
+              </table>
+            </td>
+            <td>One size</td>
+            <td>&#x2611;</td>
+            <td><a href="">&#128722;</a></td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Fringe earrings</td>
+            <td>Cute styled fringe earrings with moon design</td>
+            <td>
+              <img
+                src="../Images/Portfolio-images/earrings-2.jpg"
+                alt="Fringe earrings"
+              />
+            </td>
+            <td>$40</td>
+            <td>20</td>
+            <td>
+              <table class="inner">
+                <tr>
+                  <td>Blue and purple</td>
+                </tr>
+                <tr>
+                  <td>Pink and white</td>
+                </tr>
+                <tr>
+                  <td>Gold</td>
+                </tr>
+              </table>
+            </td>
+            <td>One size</td>
+            <td>&#x2611;</td>
+            <td><a href="">&#128722;</a></td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Character keychain</td>
+            <td>
+              Carry your favourite cartoon character on your keys with a beaded
+              keychain
+            </td>
+            <td>
+              <img
+                src="../Images/Portfolio-images/pascal.jpg"
+                alt="Beaded lizard, Pascal from Tangled"
+              />
+            </td>
+            <td>Price varies</td>
+            <td>Custom order</td>
+            <td>Custom order</td>
+            <td>Custom order</td>
+            <td>&#x2611;</td>
+            <td><a href="">&#128722;</a></td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Large custom earrings</td>
+            <td>Large designed custom earrings on hooks</td>
+            <td>
+              <img
+                src="../Images/Portfolio-images/sun-earrings.jpg"
+                alt="Large sunset earrings"
+              />
+            </td>
+            <td>Starts at $120</td>
+            <td>Price varies</td>
+            <td>Custom order</td>
+            <td>Custom order</td>
+            <td>&#x2611;</td>
+            <td><a href="">&#128722;</a></td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Outdoor Scene Painting</td>
+            <td>Custom painting of outdoor scene</td>
+            <td>
+              <img
+                src="../Images/Portfolio-images/painting.jpg"
+                alt="Custom painting of outdoor scene"
+              />
+            </td>
+            <td>Starts at $80</td>
+            <td>4</td>
+            <td>Custom order</td>
+            <td>Custom order</td>
+            <td>&#x2611;</td>
+            <td><a href="">&#128722;</a></td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Triangle earrings</td>
+            <td>Triangle custom designed earrings on hooks</td>
+            <td>
+              <img
+                src="../Images/Portfolio-images/earrings-1.jpg"
+                alt="Triangle earrings with green trees"
+              />
+            </td>
+            <td>$30</td>
+            <td>8</td>
+            <td>Custom order</td>
+            <td>Custom order</td>
+            <td>&#x2611;</td>
+            <td><a href="">&#128722;</a></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="2">Want a custom order?</th>
+            <td colspan="4">
+              <a href="mailto:msmlaforme@hotmail.com">Contact us</a>
+            </td>
+            <td colspan="6">
+              Please include your name, item number, colour and size options,
+              and any other information for custom order.
+            </td>
+          </tr>
+        </tfoot>
+        <tfoot></tfoot>
+      </table>
+
+      <div class="copyright">
+        <p class="disc">
+          All artwork shared on this page are original works, hand-crafted by
+          Michelle La Forme. They are not to be replicated or shared without
+          permission.
+        </p>
+        <p class="copy">&copy; Copyright 2024, Art by Michelle La Forme</p>
+        <p class="shopify">
+          Payment and checkout processing (probably) by Shopify
+        </p>
+      </div>
+    </main>
+    <!-- business location and copyright info. consistent across all pages -->
+
+    <footer>
+      <address>
+        Art hand-crafted in: <br />Quispamsis, New Brunswick, Canada <br />On
+        unceded Wolastoqey land
+      </address>
+
+      <!-- Will have to double check how to add shopify database and what I need as for credit here -->
+      <div class="footerNav">
+        <a href="#top">Top of page</a>
+        <a href="../HTML/contact.html">Contact</a>
+      </div>
+      <div class="icons">
+        <a href="https://www.facebook.com/artbymichellelaforme"
+          ><img src="../Images/Icons/facebook.png" alt="Facebook logo"
+        /></a>
+        <a href="https://www.instagram.com/artbymichellelaforme/"
+          ><img src="../Images/Icons/instagram.png" alt="Instagram logo"
+        /></a>
+        <a href="https://www.youtube.com/@artbymichellelaforme"
+          ><img src="../Images/Icons/youtube.png" alt=""
+        /></a>
+        <a href="https://www.linkedin.com/in/michellelaforme"
+          ><img src="../Images/Icons/linkedin.png" alt=""
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

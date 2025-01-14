@@ -1,0 +1,137 @@
+/* global styles */
+
+@charset "utf-8";
+/* colours: dark pink #f07589; light pink #ffb4c0; brown: #665042; off-white: #fff8f9 */
+/* fonts: "Playfair Display" ; "Spicy Rice" */
+
+/* general styles, across whole page */
+body {
+  background-image: linear-gradient(#ffb4c0, #f07589);
+  width: 80%;
+  margin: auto;
+  font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
+  color: #665042;
+  text-align: center;
+}
+
+img {
+  width: 30%;
+}
+/* header/ banner */
+header {
+  background-color: #fff8f9;
+  color: #f07589;
+  border-radius: 20px;
+}
+.banner {
+  background-color: #f07589;
+  color: #fff8f9;
+  font-size: 1.25rem;
+  width: 100%;
+  padding: 1%;
+  font-style: italic;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+}
+header > a {
+  color: #fff8f9;
+}
+
+.title {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 3%;
+}
+h1 {
+  font-size: 3rem;
+  font-family: "Spicy Rice", "Playfair Display", Georgia, "Times New Roman",
+    Times, serif;
+}
+
+h3 {
+  font-family: "Spicy Rice", "Playfair Display", Georgia, "Times New Roman",
+    Times, serif;
+  font-size: 2rem;
+  padding: 2%;
+}
+
+.logo {
+  width: 12%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1%;
+}
+nav a {
+  color: #f07589;
+}
+nav a:hover {
+  font-style: italic;
+  color: #ffb4c0;
+}
+
+/* footer styles */
+footer {
+  background-color: #fff8f9;
+  /* display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "disc shop"
+    "copy shop"
+    "address address"
+    "icons icons"
+    "link link";
+  justify-content: center;
+  align-items: center; */
+  border-radius: 20px;
+}
+footer address {
+  /* border: 2px solid red; */
+  /* grid-area: address; */
+  padding: 1%;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin: auto;
+  padding: 1%;
+  /* grid-area: icons; */
+}
+.icons img {
+  width: 30%;
+}
+.disc {
+  /* border: 2px solid orange; */
+  margin: 1%;
+  /* grid-area: disc; */
+  padding: 1%;
+}
+.footerNav {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: space-evenly;
+  /* grid-area: link; */
+}
+.footerNav a {
+  color: #f07589;
+  padding: 1%;
+}
+.copyright {
+  color: #fff8f9;
+  padding: 1%;
+  border: 2px solid #ffb4c0;
+  border-radius: 20px;
+  margin-bottom: 1%;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding: 2%;
+}
